@@ -27,5 +27,5 @@ scipy
 tensorboard
 torch>=2.1
 transformers==4.39.3
-tokenizers>=0.19,<0.20
+tokenizers>=0.14,<0.19
 umap-learn
