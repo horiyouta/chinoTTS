@@ -3,7 +3,7 @@
 コードと完全に一致している保証はない。あくまで参考程度とすること。
 """
 
-from typing import Any, Optional, Union
+from typing import Any, Optional, Union, List as list, Tuple as tuple
 
 import torch
 from torch.nn import functional as F

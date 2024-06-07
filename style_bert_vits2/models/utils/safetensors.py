@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Any, Optional, Union
+from typing import Any, Optional, Union, Tuple as tuple, Dict as dict
 
 import torch
 from safetensors import safe_open

@@ -2,7 +2,7 @@ import glob
 import os
 import re
 from pathlib import Path
-from typing import Any, Optional, Union
+from typing import Any, Optional, Union, List as list, Tuple as tuple
 
 import torch
 

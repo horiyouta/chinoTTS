@@ -5,7 +5,7 @@ Style-Bert-VITS2 モデルのハイパーパラメータを表す Pydantic モ�
 """
 
 from pathlib import Path
-from typing import Optional, Union
+from typing import Optional, Union, List as list, Tuple as tuple, Dict as dict
 
 from pydantic import BaseModel, ConfigDict
 
