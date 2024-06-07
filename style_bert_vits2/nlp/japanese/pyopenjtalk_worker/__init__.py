@@ -3,7 +3,7 @@ Run the pyopenjtalk worker in a separate process
 to avoid user dictionary access error
 """
 
-from typing import Any, Optional, List as list
+from typing import Any, Optional, List as list, Dict as dict
 
 from style_bert_vits2.logging import logger
 from style_bert_vits2.nlp.japanese.pyopenjtalk_worker.worker_client import WorkerClient

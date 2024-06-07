@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Tuple as tuple
 
 import numpy as np
 import pyworld

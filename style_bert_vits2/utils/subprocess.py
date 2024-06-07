@@ -1,6 +1,6 @@
 import subprocess
 import sys
-from typing import Any, Callable
+from typing import Any, Callable, List as list, Tuple as tuple
 
 from style_bert_vits2.logging import logger
 from style_bert_vits2.utils.stdout_wrapper import SAFE_STDOUT
