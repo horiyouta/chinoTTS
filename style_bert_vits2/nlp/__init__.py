@@ -99,7 +99,7 @@ def clean_text(
 
 def cleaned_text_to_sequence(
     cleaned_phones: typing.List[str], tones: typing.List[int], language: Languages
-) -> tuple[typing.List[int], typing.List[int], typing.List[int]]:
+) -> typing.Tuple[typing.List[int], typing.List[int], typing.List[int]]:
     """
     音素リスト・アクセントリスト・言語を、テキスト内の対応する ID に変換する
 
