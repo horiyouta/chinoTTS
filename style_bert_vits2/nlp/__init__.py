@@ -1,4 +1,5 @@
 from typing import TYPE_CHECKING, Optional
+import typing
 
 from style_bert_vits2.constants import Languages
 from style_bert_vits2.nlp.symbols import (
@@ -19,7 +20,7 @@ __symbol_to_id = {s: i for i, s in enumerate(SYMBOLS)}
 
 def extract_bert_feature(
     text: str,
-    word2ph: list[int],
+    word2ph: typing.List[int],
     language: Languages,
     device: str,
     assist_text: Optional[str] = None,
