@@ -26,5 +26,5 @@ safetensors
 scipy
 tensorboard
 torch>=2.1
-transformers -U
+transformers==4.9.2
 umap-learn
