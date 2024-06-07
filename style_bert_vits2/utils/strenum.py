@@ -1,5 +1,5 @@
 import enum
-
+from typing import List as list
 
 class StrEnum(str, enum.Enum):
     """

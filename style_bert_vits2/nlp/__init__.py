@@ -1,4 +1,4 @@
-from typing import TYPE_CHECKING, Optional
+from typing import TYPE_CHECKING, Optional, List as list, Tuple as tuple
 
 from style_bert_vits2.constants import Languages
 from style_bert_vits2.nlp.symbols import (
