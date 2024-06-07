@@ -1,7 +1,7 @@
 import select
 import socket
 import time
-from typing import Any, cast
+from typing import Any, cast, Dict as dict
 
 import pyopenjtalk
 

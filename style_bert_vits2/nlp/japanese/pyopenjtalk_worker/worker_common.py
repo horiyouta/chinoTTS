@@ -1,7 +1,7 @@
 import json
 import socket
 from enum import IntEnum, auto
-from typing import Any, Final
+from typing import Any, Final, Dict as dict
 
 
 WORKER_PORT: Final[int] = 7861
