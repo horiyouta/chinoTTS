@@ -73,7 +73,7 @@ def load_model(
         assert DEFAULT_BERT_TOKENIZER_PATHS[
             language
         ].exists(), f"The default {language} BERT model does not exist on the file system. Please specify the path to the pre-trained model."
-        pretrained_model_name_or_path = str(DEFAULT_BERT_TOKENIZER_PATHS[language]) + '/pytorch_model.bin'
+        pretrained_model_name_or_path = str(DEFAULT_BERT_TOKENIZER_PATHS[language])
 
     # BERT モデルをロードし、辞書に格納して返す
     ## 英語のみ DebertaV2Model でロードする必要がある
@@ -85,9 +85,11 @@ def load_model(
             ),
         )
     else:
+        print(pretrained_model_name_or_path) # add
         model = AutoModelForMaskedLM.from_pretrained(
             pretrained_model_name_or_path, cache_dir=cache_dir, revision=revision
         )
+    print(model) # add
     __loaded_models[language] = model
     logger.info(
         f"Loaded the {language} BERT model from {pretrained_model_name_or_path}"
