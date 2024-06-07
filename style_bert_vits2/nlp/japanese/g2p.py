@@ -1,5 +1,5 @@
 import re
-from typing import TypedDict
+from typing import TypedDict, List as list, Tuple as tuple
 
 from style_bert_vits2.constants import Languages
 from style_bert_vits2.logging import logger

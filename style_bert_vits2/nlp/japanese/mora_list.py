@@ -47,7 +47,7 @@ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 """
 
-from typing import Optional
+from typing import Optional, List as list, Tuple as tuple, Dict as dict
 
 
 # (カタカナ, 子音, 母音)の順。子音がない場合は None を入れる。

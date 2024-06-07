@@ -5,6 +5,7 @@ from style_bert_vits2.nlp.japanese.mora_list import (
     MORA_PHONEMES_TO_MORA_KATA,
 )
 from style_bert_vits2.nlp.symbols import PUNCTUATIONS
+from typing import List as list, Tuple as tuple
 
 
 def g2kata_tone(norm_text: str) -> list[tuple[str, int]]:
