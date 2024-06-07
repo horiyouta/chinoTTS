@@ -175,7 +175,7 @@ origins = [
 ]
 
 # Get path settings
-with open(Path("configs/paths.yml"), "r", encoding="utf-8") as f:
+with open(Path("configs/default_paths.yml"), "r", encoding="utf-8") as f: # paths => default_paths
     path_config: dict[str, str] = yaml.safe_load(f.read())
     # dataset_root = path_config["dataset_root"]
     assets_root = path_config["assets_root"]
