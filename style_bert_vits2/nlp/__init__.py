@@ -58,7 +58,7 @@ def clean_text(
     language: Languages,
     use_jp_extra: bool = True,
     raise_yomi_error: bool = False,
-) -> tuple[str, list[str], list[int], list[int]]:
+) -> tuple[str, typing.List[str], typing.List[int], typing.List[int]]:
     """
     テキストをクリーニングし、音素に変換する
 
@@ -98,8 +98,8 @@ def clean_text(
 
 
 def cleaned_text_to_sequence(
-    cleaned_phones: list[str], tones: list[int], language: Languages
-) -> tuple[list[int], list[int], list[int]]:
+    cleaned_phones: typing.List[str], tones: typing.List[int], language: Languages
+) -> tuple[typing.List[int], typing.List[int], typing.List[int]]:
     """
     音素リスト・アクセントリスト・言語を、テキスト内の対応する ID に変換する
 
