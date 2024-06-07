@@ -1,4 +1,4 @@
-# Dockerfile.deploy用の.dockerignore
+# docker push horiyouta/chinotts:tagname.deploy用の.dockerignore
 # 日本語のJP-Extraのエディター稼働のみに必要なファイルを指定する
 
 *

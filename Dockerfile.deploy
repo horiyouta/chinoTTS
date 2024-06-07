@@ -1,4 +1,4 @@
-# Hugging face spaces (CPU) でエディタ (server_editor.py) のデプロイ用
+# docker build -t fastapi .# Hugging face spaces (CPU) でエディタ (server_editor.py) のデプロイ用
 
 # See https://huggingface.co/docs/hub/spaces-sdks-docker-first-demo
 

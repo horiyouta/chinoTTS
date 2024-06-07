@@ -1,5 +1,4 @@
 from typing import TYPE_CHECKING, Optional
-import typing
 
 from style_bert_vits2.constants import Languages
 from style_bert_vits2.nlp.symbols import (
@@ -20,7 +19,7 @@ __symbol_to_id = {s: i for i, s in enumerate(SYMBOLS)}
 
 def extract_bert_feature(
     text: str,
-    word2ph: typing.List[int],
+    word2ph: list[int],
     language: Languages,
     device: str,
     assist_text: Optional[str] = None,
@@ -58,7 +57,7 @@ def clean_text(
     language: Languages,
     use_jp_extra: bool = True,
     raise_yomi_error: bool = False,
-) -> typing.Tuple[str, typing.List[str], typing.List[int], typing.List[int]]:
+) -> tuple[str, list[str], list[int], list[int]]:
     """
     テキストをクリーニングし、音素に変換する
 
@@ -98,8 +97,8 @@ def clean_text(
 
 
 def cleaned_text_to_sequence(
-    cleaned_phones: typing.List[str], tones: typing.List[int], language: Languages
-) -> typing.Tuple[typing.List[int], typing.List[int], typing.List[int]]:
+    cleaned_phones: list[str], tones: list[int], language: Languages
+) -> tuple[list[int], list[int], list[int]]:
     """
     音素リスト・アクセントリスト・言語を、テキスト内の対応する ID に変換する
 
