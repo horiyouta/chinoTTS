@@ -159,8 +159,8 @@ update_dict()
 # 事前に BERT モデル/トークナイザーをロードしておく
 ## ここでロードしなくても必要になった際に自動ロードされるが、時間がかかるため事前にロードしておいた方が体験が良い
 ## server_editor.py は日本語にしか対応していないため、日本語の BERT モデル/トークナイザーのみロードする
-bert_models.load_model(Languages.JP)
-bert_models.load_tokenizer(Languages.JP)
+# bert_models.load_model(Languages.JP)
+# bert_models.load_tokenizer(Languages.JP)
 
 
 class AudioResponse(Response):
@@ -449,3 +449,6 @@ if __name__ == "__main__":
     if args.inbrowser:
         webbrowser.open(f"http://localhost:{port}")
     uvicorn.run(app, host="0.0.0.0", port=port)
+
+    bert_models.load_model(Languages.JP) # add
+    bert_models.load_tokenizer(Languages.JP) # add

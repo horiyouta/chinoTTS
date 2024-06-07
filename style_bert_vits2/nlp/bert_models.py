@@ -85,11 +85,9 @@ def load_model(
             ),
         )
     else:
-        print(pretrained_model_name_or_path) # add
         model = AutoModelForMaskedLM.from_pretrained(
             pretrained_model_name_or_path, cache_dir=cache_dir, revision=revision
         )
-    print(model) # add
     __loaded_models[language] = model
     logger.info(
         f"Loaded the {language} BERT model from {pretrained_model_name_or_path}"
