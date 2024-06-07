@@ -16,7 +16,7 @@ import zipfile
 from datetime import datetime
 from io import BytesIO
 from pathlib import Path
-from typing import Optional
+from typing import Optional, List as list, Dict as dict
 
 import numpy as np
 import requests
