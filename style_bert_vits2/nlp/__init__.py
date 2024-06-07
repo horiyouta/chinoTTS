@@ -58,7 +58,7 @@ def clean_text(
     language: Languages,
     use_jp_extra: bool = True,
     raise_yomi_error: bool = False,
-) -> tuple[str, typing.List[str], typing.List[int], typing.List[int]]:
+) -> typing.Tuple[str, typing.List[str], typing.List[int], typing.List[int]]:
     """
     テキストをクリーニングし、音素に変換する
 
